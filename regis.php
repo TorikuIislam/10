@@ -10,7 +10,7 @@ if(isset($_POST['submit']))
   $email=$_POST['email'];
   $password=$_POST['pin'];
 
-  $sql = "insert into registration (NAME, EMAIL, PASSWORD)
+  $sql = "insert into users_regi (NAME, EMAIL, PASSWORD)
   VALUES ('$name', '$email', '$password')";
   $data=mysqli_query($conn,$sql);
 
